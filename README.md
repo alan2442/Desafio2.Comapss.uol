@@ -59,35 +59,7 @@ A arquitetura implementada segue um modelo altamente escalável e modular basead
 - 1.3 - Dentro do arquivo digite:
 
 -------------
-version: '3.3'
-services:
-wordpress:
-image: wordpress:latest
-container_name: wordpress
-ports:
-- "8000:80"
-environment:
-WORDPRESS_DB_HOST: db
-WORDPRESS_DB_USER: wordpress
-WORDPRESS_DB_PASSWORD: wordpress
-WORDPRESS_DB_NAME: wordpress
-volumes:
-- ./wp-content:/var/www/html/wp-content
-depends_on:
-- db
-db:
-image: mysql:5.7
-container_name: mysql
-restart: always
-environment:
-MYSQL_DATABASE: wordpress
-MYSQL_USER: wordpress
-MYSQL_PASSWORD: wordpress
-MYSQL_ROOT_PASSWORD: root
-volumes:
-- db_data:/var/lib/mysql
-volumes:
-db_data:
+![Imagem 1](C:\Users\pc\Pictures\projeto2\imagem1.png)
 -------------
 - 1.4 - Dentro do diretório que contém o arquivo criado digite no terminal: docker-compose up -d
 
