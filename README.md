@@ -82,7 +82,7 @@ A arquitetura implementada segue um modelo altamente escalável e modular basead
   
 - 2.5 - Bloco CLDR IPv4: Entrada manual de CLDR IPv4
   
-- 2.6 - CLDR IPv4: 10.0.0.0/16
+- 2.6 - CLDR IPv4: 10.0.0.0/24
   
 - 2.5 - Clique em criar VPC
 ---
@@ -97,13 +97,7 @@ A arquitetura implementada segue um modelo altamente escalável e modular basead
   
 - 3.3 - Crie as seguintes sub-redes preenchendo:
   
-Nome da sub-rede                  	CLDR                 AZ
-subnet-public-a			        10.0.1.0/16	     use1-az6 (us-east-1a)
-subnet-public-b			        10.0.2.0/16          use1-az1 (us-east-1b)
-subnet-ec2-private-a		        10.0.3.0/16	     use1-az6 (us-east-1a)
-subnet-ec2-private-b		        10.0.4.0/16          use1-az1 (us-east-1b)
-subnet-rds-private-a		        10.0.5.0/16	     use1-az6 (us-east-1a)
-subnet-rds-private-b		        10.0.6.0/16          use1-az1 (us-east-1b)
+![Imagem 1](C:/Users/pc/Pictures/projeto2/imagem1.png)
 
 - 3.4 - Crie suas Tags(Opcional)
 
