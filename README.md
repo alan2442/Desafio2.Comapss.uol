@@ -311,6 +311,7 @@ OBS: Quando criei a vpc a aws criou um internet Gateway(IGW) e associou a minha 
 -- No campo de origem, selecione o grupo de segurança sgInstance
 
 -- Clique em Salvar Regra
+
 - 8.6.5 - Clique em criar grupo de Segurança
 
 
@@ -334,6 +335,7 @@ OBS: Quando criei a vpc a aws criou um internet Gateway(IGW) e associou a minha 
 -- No campo de origem, selecione o grupo de segurança sgInstance
 
 -- Clique em Salvar Regra
+
 - 8.7.5 - Clique em criar grupo de Segurança
 
 
