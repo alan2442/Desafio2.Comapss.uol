@@ -60,7 +60,7 @@ A arquitetura implementada segue um modelo altamente escalável e modular basead
 
 -------------
 
-![Imagem 1](C:/Users/pc/Pictures/projeto2/imagem1.png)
+![Imagem 1](/Imgprojeto2/imagem1.png)
 
 -------------
 - 1.4 - Dentro do diretório que contém o arquivo criado digite no terminal: docker-compose up -d
@@ -97,7 +97,7 @@ A arquitetura implementada segue um modelo altamente escalável e modular basead
   
 - 3.3 - Crie as seguintes sub-redes preenchendo:
   
-![Imagem 1](C:/Users/pc/Pictures/projeto2/imagem1.png)
+![Imagem 1](/Imgprojeto2/subnets.png)
 
 - 3.4 - Crie suas Tags(Opcional)
 
@@ -520,7 +520,7 @@ Esse Security Group é o que vai permitir o acesso somente das EC2s ao EFS via p
 
 ------------------
 
-![Imagem 1](C:/Users/pc/Pictures/projeto2/imagem1.png)
+![Imagem 1](/Imgprojeto2/userdata.png)
 
 ------------------------
 
