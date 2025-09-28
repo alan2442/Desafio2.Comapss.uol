@@ -48,9 +48,9 @@ A arquitetura implementada segue um modelo altamente escalável e modular basead
 
   _________________________________________________________________________________________________________________________________________________________________
 
-## Etapas do Desafio
+# Etapas do Desafio:
 
-# etapa 1 - rodando o wordpress via Docker composse para se familiarizar:
+## etapa 1 - rodando o wordpress via Docker composse para se familiarizar:
 
 - 1.1 - Crie um diretório
 
@@ -96,7 +96,7 @@ db_data:
  _________________________________________________________________________________________________________________________________________________________________
 
 
-# Etapa 2 - Criando uma VPC: 
+## Etapa 2 - Criando uma VPC: 
 
 - 2.1 - Vá para o Console da AWS
   
@@ -115,7 +115,7 @@ db_data:
 
  _________________________________________________________________________________________________________________________________________________________________
 
-# Etapa 3 - Criar 4 subnets ( 2 públicas, 2 privadas): 
+## Etapa 3 - Criar 4 subnets ( 2 públicas, 2 privadas): 
 
 - 3.1 - Ir em VPC > Subnets > Cria Subnets
   
@@ -135,7 +135,7 @@ subnet-rds-private-b		        10.0.6.0/16          use1-az1 (us-east-1b)
 
  _________________________________________________________________________________________________________________________________________________________________
 
-# Etapa 4 - Criar o Gateways da Internet (IGW) 
+## Etapa 4 - Criar o Gateways da Internet (IGW) 
 
 - 4.1 - Vá em VPC > Gateways da Internet
 
@@ -154,7 +154,7 @@ OBS: Quando criei a vpc a aws criou um internet Gateway(IGW) e associou a minha 
  _________________________________________________________________________________________________________________________________________________________________
 
 
-# Etapa 5 - Criar a Route Table para Subnets Públicas
+## Etapa 5 - Criar a Route Table para Subnets Públicas
 
 - 5.1 - Vá em VPC > Tabelas de rotas(Route Tables)
   
@@ -177,7 +177,7 @@ OBS: Quando criei a vpc a aws criou um internet Gateway(IGW) e associou a minha 
  _________________________________________________________________________________________________________________________________________________________________
 
 
-# Etapa 6 - Criar NAT Gateway
+## Etapa 6 - Criar NAT Gateway
 
 - 6.1 - Vá em VPC > NAT Gateways
 
@@ -195,7 +195,7 @@ OBS: Quando criei a vpc a aws criou um internet Gateway(IGW) e associou a minha 
 
  _________________________________________________________________________________________________________________________________________________________________
 
-# Etapa 7 - Criar Tabela de Rota(Route Table) para Subnets Privadas:
+## Etapa 7 - Criar Tabela de Rota(Route Table) para Subnets Privadas:
 
 - 7.1 - Vá em VPC > Tabelas de Rotas (Route Tables) > Criar tabela de rota (route table), Crie duas tabelas de rotas privadas
 
@@ -220,7 +220,7 @@ OBS: Quando criei a vpc a aws criou um internet Gateway(IGW) e associou a minha 
 
  _________________________________________________________________________________________________________________________________________________________________
 
-# Etapa 9 - Criando os Grupos de Segurança (Security Group):
+## Etapa 9 - Criando os Grupos de Segurança (Security Group):
 
 8.1 - Vá até o serviço EC2 > Security Groups > Clique em criar grupo de segurança
 
@@ -314,7 +314,7 @@ OBS: Quando criei a vpc a aws criou um internet Gateway(IGW) e associou a minha 
 
  _________________________________________________________________________________________________________________________________________________________________
 
-# Etapa 8 - Criar RDS 
+## Etapa 8 - Criar RDS 
 
 - 9.1 - Vá até o AWS Console
 
@@ -366,7 +366,7 @@ OBS: Quando criei a vpc a aws criou um internet Gateway(IGW) e associou a minha 
 
  _________________________________________________________________________________________________________________________________________________________________
 
-# Etapa 10 - Cria o EFS(Elastic File System)
+## Etapa 10 - Cria o EFS(Elastic File System)
 
 - 10.1 - Acesse o Console da AWS
 
@@ -408,7 +408,7 @@ Esse Security Group é o que vai permitir o acesso somente das EC2s ao EFS via p
 
  _________________________________________________________________________________________________________________________________________________________________
 
-# Etapa 11 - Criando o Grupo de Destino
+## Etapa 11 - Criando o Grupo de Destino
 
 - 11.1 - No console AWS pesquise por EC2 e entre no serviço
 
@@ -435,7 +435,7 @@ Esse Security Group é o que vai permitir o acesso somente das EC2s ao EFS via p
 
  _________________________________________________________________________________________________________________________________________________________________
 
-# Etapa 12 - Criando o Load Balancer
+## Etapa 12 - Criando o Load Balancer
 
 - 12.1 - No console AWS pesquise por EC2 e entre no serviço
 
@@ -465,7 +465,7 @@ Esse Security Group é o que vai permitir o acesso somente das EC2s ao EFS via p
 
  _________________________________________________________________________________________________________________________________________________________________
 
-# Etapa 13 - Configurando User-data para usar no modelo de execução: 
+## Etapa 13 - Configurando User-data para usar no modelo de execução: 
 
 - 13.1 - No console AWS pesquise por EC2 e entre no serviço
 
@@ -576,7 +576,7 @@ EOF
 
  _________________________________________________________________________________________________________________________________________________________________
 
-# Etapa 14 - Criando modelo de execução: 
+## Etapa 14 - Criando modelo de execução: 
 
 - 14.1 - No console AWS pesquise por EC2 e entre no serviço
 
@@ -606,7 +606,7 @@ EOF
 
  _________________________________________________________________________________________________________________________________________________________________
 
-# Etapa 15 - Criando o auto-scaling: 
+## Etapa 15 - Criando o auto-scaling: 
 
 - 15.1 - No console AWS pesquise por EC2 e entre no serviço
 
