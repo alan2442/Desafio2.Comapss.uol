@@ -670,6 +670,7 @@ EOF
 
 - 15.16 - Crie o auto-scaling
 
+_________________________________________________________________________________________________________________________________________________________________
 
 # 4. Conclusão do Projeto
 
@@ -686,6 +687,8 @@ Este projeto proporcionou uma visão prática e completa da criação de uma inf
 - Automatização do provisionamento com User Data.
 
 - Além de reforçar conhecimentos em Docker, orquestração com Docker Compose e a importância do isolamento de ambientes e segurança de rede.
+
+_________________________________________________________________________________________________________________________________________________________________
 
 # 5. Considerações Finais
 
