@@ -645,7 +645,7 @@ EOF
 
 Este projeto proporcionou uma visão prática e completa da criação de uma infraestrutura escalável e segura para aplicações WordPress utilizando os principais serviços da AWS. Foi possível aplicar conceitos fundamentais como:
 
-Segmentação de redes com VPC.
+- Segmentação de redes com VPC.
 
 - Alta disponibilidade via Load Balancer e Auto Scaling.
 
