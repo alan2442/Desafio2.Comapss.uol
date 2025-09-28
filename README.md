@@ -87,7 +87,7 @@ volumes:
 - db_data:/var/lib/mysql
 volumes:
 db_data:
-
+-------------
 - 1.4 - Dentro do diretório que contém o arquivo criado digite no terminal: docker-compose up -d
 
 - 1.5 - Entre no wordpress e crie um site básico para aprender a usá-lo
