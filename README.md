@@ -188,13 +188,13 @@ OBS: Quando criei a vpc a aws criou um internet Gateway(IGW) e associou a minha 
 
  _________________________________________________________________________________________________________________________________________________________________
 
-## Etapa 9 - Criando os Grupos de Segurança (Security Group):
+## Etapa 8 - Criando os Grupos de Segurança (Security Group):
 
 8.1 - Vá até o serviço EC2 > Security Groups > Clique em criar grupo de segurança
 
 8.2 - Você irá criar 5 grupo, um de cada vez, eles serão chamado: sgBastion, sgInstance, sgLoadBalancer, sgEFS, sgRDS
 
-- 8.3 - Criando o SgBastion:
+8.3 - Criando o SgBastion:
 - 8.3.1 - Nome do grupo de segurança: sgBastion
   
 - 8.3.2 - Descrição: SG Bastion
@@ -217,7 +217,7 @@ OBS: Quando criei a vpc a aws criou um internet Gateway(IGW) e associou a minha 
 - 8.3.5 - Clique em criar grupo de Segurança
 
 
-- 8.4 - Criando o SgInstance:
+8.4 - Criando o SgInstance:
   
 - 8.4.1 - Nome do grupo de segurança: sgInstance
   
@@ -267,7 +267,7 @@ OBS: Quando criei a vpc a aws criou um internet Gateway(IGW) e associou a minha 
 - 8.4.7 - Clique em criar grupo de Segurança
 
 
-- 8.5 - Criando o sgLoadBalancer:
+8.5 - Criando o sgLoadBalancer:
   
 - 8.5.1 - Nome do grupo de segurança: sgLoadBalancer
   
@@ -291,7 +291,7 @@ OBS: Quando criei a vpc a aws criou um internet Gateway(IGW) e associou a minha 
 8.5.5 - Clique em criar grupo de Segurança
 
 
-- 8.6 - Criando o sgEFS:
+8.6 - Criando o sgEFS:
   
 - 8.6.1 - Nome do grupo de segurança: sgEFS
   
@@ -314,7 +314,7 @@ OBS: Quando criei a vpc a aws criou um internet Gateway(IGW) e associou a minha 
 - 8.6.5 - Clique em criar grupo de Segurança
 
 
-- 8.7 - Criando o sgRDS:
+8.7 - Criando o sgRDS:
   
 - 8.7.1 - Nome do grupo de segurança: sgRDS
   
@@ -341,7 +341,7 @@ OBS: Quando criei a vpc a aws criou um internet Gateway(IGW) e associou a minha 
 
  _________________________________________________________________________________________________________________________________________________________________
 
-## Etapa 8 - Criar RDS 
+## Etapa 9 - Criar RDS 
 
 - 9.1 - Vá até o AWS Console
 
