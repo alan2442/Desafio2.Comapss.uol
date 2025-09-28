@@ -196,84 +196,143 @@ OBS: Quando criei a vpc a aws criou um internet Gateway(IGW) e associou a minha 
 
 8.3 - Criando o SgBastion:
 - 8.3.1 - Nome do grupo de segurança: sgBastion
+  
 - 8.3.2 - Descrição: SG Bastion
+  
 - 8.3.3 - VPC: vpc-wordpress
+  
 - 8.3.4 - Vá na aba Regras de Entrada (Inbound rules) >  Clique em Adicionar Regra (Add Rule) e preencha:
 -- Tipo (Type): SSH
+  
 -- Protocolo (Protocol): TCP
+
 -- Port Intervalo de portas (Range): 22
+
 -- Origem: selecione Personalizado (Custom)
+
 -- No campo de origem, selecione o 0.0.0.0
+
 -- Clique em Salvar Regra
+
 - 8.3.5 - Clique em criar grupo de Segurança
 
 
 - 8.4 - Criando o SgInstance:
+  
 - 8.4.1 - Nome do grupo de segurança: sgInstance
+  
 - 8.4.2 - Descrição: SG Instance
+  
 - 8.4.3 - VPC: vpc-wordpress
+  
 - 8.4.4 - Vá na aba Regras de Entrada (Inbound rules) >  Clique em Adicionar Regra (Add Rule) e preencha:
 -- Tipo (Type): HTTP
+  
 -- Protocolo (Protocol): TCP
+
 -- Port Intervalo de portas (Range): 80
+
 -- Origem: selecione Personalizado (Custom)
+
 -- No campo de origem, selecione 0.0.0.0/0
+
 -- Clique em Salvar Regra
+
 - 8.4.5 - Clique em Adicionar Regra("Add Rule") e preencha:
 -- Tipo (Type): SSH
+  
 -- Protocolo (Protocol): TCP
+
 -- Port Intervalo de portas (Range): 22
+
 -- Origem: selecione Personalizado (Custom)
+
 -- No campo de origem, selecione o sgBastion
+
 -- Clique em Salvar Regra
+
 - 8.4.6 - Na parte de regra de saida, Clique em Adicionar Regra de Saida e preencha:
 -- Tipo (Type): HTTP
+  
 -- Protocolo (Protocol): TCP
+
 -- Port Intervalo de portas (Range): 80
+
 -- Origem: selecione Personalizado (Custom)
+
 -- No campo de origem, selecione 0.0.0.0/0
+
 -- Clique em Salvar Regra
+
 - 8.4.7 - Clique em criar grupo de Segurança
 
 
 - 8.5 - Criando o sgLoadBalancer:
+  
 - 8.5.1 - Nome do grupo de segurança: sgLoadBalancer
+  
 - 8.5.2 - Descrição: SG LoadBalancer
+  
 - 8.5.3 - VPC: vpc-wordpress
+  
 - 8.5.4 - Vá na aba Regras de Entrada (Inbound rules) >  Clique em Adicionar Regra (Add Rule) e preencha:
 -- Tipo (Type): HTTP
+
 -- Protocolo (Protocol): TCP
+
 -- Port Intervalo de portas (Range): 80
+
 -- Origem: selecione Personalizado (Custom)
+
 -- No campo de origem, selecione 0.0.0.0/0
+
 -- Clique em Salvar Regra
+
 8.5.5 - Clique em criar grupo de Segurança
 
 
 - 8.6 - Criando o sgEFS:
+  
 - 8.6.1 - Nome do grupo de segurança: sgEFS
+  
 - 8.6.2 - Descrição: SG EFS
+  
 - 8.6.3 - VPC: vpc-wordpress
+  
 - 8.6.4 - Vá na aba Regras de Entrada (Inbound rules) >  Clique em Adicionar Regra (Add Rule) e preencha:
 -- Tipo (Type): NFS
+  
 -- Protocolo (Protocol): TCP
+
 -- Port Intervalo de portas (Range): 2049
+
 -- Origem: selecione Personalizado (Custom)
+
 -- No campo de origem, selecione o grupo de segurança sgInstance
+
 -- Clique em Salvar Regra
 - 8.6.5 - Clique em criar grupo de Segurança
 
 
 - 8.7 - Criando o sgRDS:
+  
 - 8.7.1 - Nome do grupo de segurança: sgRDS
+  
 - 8.7.2 - Descrição: SG RDS
+  
 - 8.7.3 - VPC: vpc-wordpress
+  
 - 8.7.4 - Vá na aba Regras de Entrada (Inbound rules) >  Clique em Adicionar Regra (Add Rule) e preencha:
 -- Tipo (Type): MYSQL/Aurora
+  
 -- Protocolo (Protocol): TCP
+
 -- Port Intervalo de portas (Range): 3306
+
 -- Origem: selecione Personalizado (Custom)
+
 -- No campo de origem, selecione o grupo de segurança sgInstance
+
 -- Clique em Salvar Regra
 - 8.7.5 - Clique em criar grupo de Segurança
 
