@@ -411,6 +411,7 @@ OBS: Quando criei a vpc a aws criou um internet Gateway(IGW) e associou a minha 
 
 - 10.7 - Clique em Próximo
 -- aba Acesso a rede (Network Access) (Mount Targets):
+  
 Aqui você irá configurar o EFS para ficar acessível dentro da sua VPC, nas subnets privadas onde as EC2s estão.
 A AWS vai sugerir automaticamente as zonas de disponibilidade (AZs)
 
