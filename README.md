@@ -46,6 +46,8 @@ A arquitetura implementada segue um modelo altamente escalável e modular basead
 
 - Toda a arquitetura foi construída com foco em segurança, alta disponibilidade e escalabilidade.
 
+  ![Imagem 1](/Imgprojeto2/diagrama.png)
+
   _________________________________________________________________________________________________________________________________________________________________
 
 # Etapas do Desafio:
