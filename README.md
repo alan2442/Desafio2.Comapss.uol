@@ -1,4 +1,4 @@
-# Desafio2.Comapass.uol
+# Desafio2.Compass.uol
 
 # 1. Tecnologia	Utilizadas
 
