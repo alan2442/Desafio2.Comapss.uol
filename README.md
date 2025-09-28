@@ -48,6 +48,7 @@ A arquitetura implementada segue um modelo altamente escalável e modular basead
 
   _________________________________________________________________________________________________________________________________________________________________
 
+## Etapas do Desafio
 
 # etapa 1 - rodando o wordpress via Docker composse para se familiarizar:
 
