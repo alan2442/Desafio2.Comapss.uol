@@ -194,7 +194,7 @@ OBS: Quando criei a vpc a aws criou um internet Gateway(IGW) e associou a minha 
 
 8.2 - Você irá criar 5 grupo, um de cada vez, eles serão chamado: sgBastion, sgInstance, sgLoadBalancer, sgEFS, sgRDS
 
-8.3 - Criando o SgBastion:
+- 8.3 - Criando o SgBastion:
 - 8.3.1 - Nome do grupo de segurança: sgBastion
   
 - 8.3.2 - Descrição: SG Bastion
