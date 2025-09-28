@@ -59,7 +59,9 @@ A arquitetura implementada segue um modelo altamente escalável e modular basead
 - 1.3 - Dentro do arquivo digite:
 
 -------------
-![Imagem 1](C:\Users\pc\Pictures\projeto2\imagem1.png)
+
+![Imagem 1](C:/Users/pc/Pictures/projeto2/imagem1.png)
+
 -------------
 - 1.4 - Dentro do diretório que contém o arquivo criado digite no terminal: docker-compose up -d
 
