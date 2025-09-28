@@ -1,7 +1,30 @@
 # Desafio2.Comapass.uol
 
+# 1. Tecnologia	Utilizadas
 
-# 1. Arquitetura da Solução
+- Docker ->	Containerização local do WordPress e banco MySQL para testes
+
+- Docker Compose ->	Orquestração dos containers
+
+- AWS VPC ->	Isolamento da rede e segmentação em subnets públicas/privadas
+
+- Amazon EC2 ->	Hospedagem das instâncias do WordPress
+
+- Amazon RDS (MySQL) ->	Banco de dados relacional gerenciado
+
+- Amazon EFS ->	Armazenamento compartilhado entre instâncias
+
+- Elastic Load Balancer (ALB) ->	Distribuição de carga entre instâncias EC2
+
+- Auto Scaling Group ->	Escalabilidade automática baseada em demanda
+
+- Security Groups	Firewall -> para controle de acesso
+
+- User-data ->	Automação da configuração das instâncias EC2
+
+
+
+# 2. Arquitetura da Solução
 
 A arquitetura implementada segue um modelo altamente escalável e modular baseado em boas práticas da AWS para ambientes WordPress em produção. A aplicação foi estruturada utilizando:
 
