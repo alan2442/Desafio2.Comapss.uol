@@ -52,7 +52,7 @@ A arquitetura implementada segue um modelo altamente escalável e modular basead
 
 # Etapas do Desafio:
 
-## etapa 1 - rodando o wordpress via Docker composse para se familiarizar:
+## Etapa 1 - rodando o wordpress via Docker composse para se familiarizar:
 
 - 1.1 - Crie um diretório
 
@@ -91,7 +91,7 @@ A arquitetura implementada segue um modelo altamente escalável e modular basead
 
  _________________________________________________________________________________________________________________________________________________________________
 
-## Etapa 3 - Criar 4 subnets ( 2 públicas, 2 privadas): 
+## Etapa 3 - Criar 6 subnets ( 2 públicas, 4 privadas): 
 
 - 3.1 - Ir em VPC > Subnets > Cria Subnets
   
@@ -99,7 +99,7 @@ A arquitetura implementada segue um modelo altamente escalável e modular basead
   
 - 3.3 - Crie as seguintes sub-redes preenchendo:
 
-  | Nome da sub-rede         | CLDR             | AZ                    |
+| Nome da sub-rede         | CLDR             | AZ                    |
 |----------------|----------------|----------------|
 | subnet-public-a	         | 10.0.1.0/16      | use1-az6 (us-east-1a) |
 | subnet-public-b          | 10.0.2.0/16      | use1-az1 (us-east-1b) |
