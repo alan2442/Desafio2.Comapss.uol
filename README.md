@@ -641,4 +641,32 @@ EOF
 - 15.16 - Crie o auto-scaling
 
 
+# 4. Conclusão do Projeto
+
+Este projeto proporcionou uma visão prática e completa da criação de uma infraestrutura escalável e segura para aplicações WordPress utilizando os principais serviços da AWS. Foi possível aplicar conceitos fundamentais como:
+
+Segmentação de redes com VPC.
+
+- Alta disponibilidade via Load Balancer e Auto Scaling.
+
+- Armazenamento persistente com EFS.
+
+- Banco de dados gerenciado com RDS.
+
+- Automatização do provisionamento com User Data.
+
+- Além de reforçar conhecimentos em Docker, orquestração com Docker Compose e a importância do isolamento de ambientes e segurança de rede.
+
+# 5. Considerações Finais
+
+Durante o desenvolvimento, alguns pontos foram essenciais para o sucesso do projeto:
+
+- Planejamento da arquitetura antes de iniciar a criação dos recursos.
+
+- Entendimento da relação entre serviços da AWS, especialmente em termos de rede e permissões.
+
+- Testes em ambiente local com Docker antes de escalar para a nuvem.
+
+- Automação usando User-data, que agilizou a criação de instâncias consistentes.
+
 
